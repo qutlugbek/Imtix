@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Logotip shriftini o'rnatish */
+        .logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            color: #262626;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Sayt orqa fon rangini qo'shish */
+        body {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-50">
+
+    <!-- Login Formasi -->
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm border border-gray-200">
+        <!-- Logotip -->
+        <div class="logo">Instagram</div>
+
+        <!-- Kirish Formasi -->
+        <form class="space-y-4">
+            <!-- Email yoki Username -->
+            <div>
+                <input type="text" placeholder="Telefon raqami, email yoki username"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-300"
+                    required>
+            </div>
+
+            <!-- Parol -->
+            <div>
+                <input type="password" placeholder="Parol"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-300"
+                    required>
+            </div>
+
+            <!-- Kirish Tugmasi -->
+            <button type="submit"
+                class="w-full bg-blue-500 text-white p-3 rounded-lg font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">Kirish</button>
+
+            <!-- Yoki Ajratgich -->
+            <div class="flex items-center justify-center my-4">
+                <span class="w-full border-t border-gray-300"></span>
+                <span class="px-3 text-gray-500 text-sm font-medium">yoki</span>
+                <span class="w-full border-t border-gray-300"></span>
+            </div>
+
+            <!-- Facebook bilan kirish -->
+            <div class="text-center">
+                <a href="#" class="text-blue-800 font-semibold text-sm hover:underline">Facebook orqali kirish</a>
+            </div>
+
+            <!-- Parolni unutdingizmi? -->
+            <div class="text-center text-gray-600 mt-4">
+                <a href="#" class="text-blue-500 hover:underline text-sm">Parolingizni unutdingizmi?</a>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="/main.js">
+
+    </script>
+
+</body>
+
+</html>
